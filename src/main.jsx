@@ -6,6 +6,7 @@ import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import './index.css'
 import Root from './routes/root.jsx'
 import Home from './pages/Home.jsx'
+import About from './pages/About.jsx';
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -16,7 +17,12 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>
+      },
+      {
+        path:'/about',
+        element:<About/>
       }
+
     ]
   }
 ])
