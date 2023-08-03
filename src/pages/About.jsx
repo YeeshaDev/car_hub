@@ -3,10 +3,19 @@ import Testimonials from '../components/Testimonials'
 import PagesHero from '../components/Features/PagesHero'
 import { FaCheckCircle, FaPhone } from 'react-icons/fa'
 import Dealers from '../components/Dealers'
+import { motion } from 'framer-motion'
 
 const About = () => {
     return (
-        <div> 
+        <motion.div
+        initial={{opacity:0, y:100}}
+        animate={{opacity:1, y:0}}
+        transition={{duration:1.7}}
+        exit={{
+           
+            opacity:0,
+        }}
+        > 
             <PagesHero
             image='./src/assets/aboutusBg.jpg'
             text='About us'
@@ -51,7 +60,7 @@ All brand & type cars in our garage
         </section>
         
 
-        </div>
+        </motion.div>
     )
 }
 

@@ -48,11 +48,13 @@ export default function Slider() {
         
         modules={[EffectFade,Autoplay, Pagination, Navigation]}
         className="mySwiper"
+
+        
       >
             {
                 images.map((item) => {
                  return (
-                        <SwiperSlide  id={item.id}>
+                        <SwiperSlide  key={item.id}>
                             <figure className="relative bg-[#333] w-full h-[600px] lg:h-full overflow-hidden">
                             <img src={item.img} alt='' className="cover " />
                            <div className="absolute top-0 bottom-0 h-full w-full bg-[rgba(0,0,0,0.5)]"></div>

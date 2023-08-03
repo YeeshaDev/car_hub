@@ -7,6 +7,10 @@ import './index.css'
 import Root from './routes/root.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx';
+import CarListings from './pages/CarListings.jsx';
+import CarDetails from './pages/CarDetails.jsx';
+import Blog from './pages/Blog.jsx';
+import BlogDetails from './pages/BlogDetails.jsx';
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -21,6 +25,22 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element:<About/>
+      },
+      {
+        path:'/cars',
+        element:<CarListings/>
+      },
+      {
+        path:'/cars/:name',
+        element:<CarDetails/>
+      },
+      {
+        path:'/blog',
+        element:<Blog/>
+      },
+      {
+        path:'/blog/:slug',
+        element:<BlogDetails/>
       }
 
     ]

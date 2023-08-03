@@ -37,7 +37,12 @@ body {
   border-radius: 2px;
   margin-top: 1rem;
 }
-
+.car_settings span{
+  display: flex;
+  align-items: center;
+  gap:3px;
+ 
+}
 .svg-border {
   position: absolute;
   left: 0;
@@ -103,6 +108,83 @@ body {
   margin-right: auto;
 }
 
+.booking__form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.booking__form input {
+  padding: 12px 15px;
+  border: 1px solid #7c8a972a;
+  color: #7c8a97;
+  width: 100%;
+  
+}
+
+.booking__form select,
+.textarea {
+  width: 100%;
+  padding: 10px 15px;
+  color: #7c8a97;
+  border: 1px solid #7c8a972a;
+  border-radius: 4px;
+  
+}
+
+.time__picker::before {
+  content: "Journey Time";
+  color: #7c8a97;
+  margin-right: 0.5rem;
+}
+
+.textarea:focus,
+.booking__form input:focus,
+.booking__form select:focus {
+  outline: none;
+}
+
+.payment label {
+  font-weight: 600;
+  color: #000d6b;
+}
+
+.payment button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: #000d6b;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.blur {
+  backdrop-filter: blur(10px);
+  transition: backdrop-filter 0.3s ease-in-out;
+}
+@layer components{
+  .nav-item li{
+@apply text-[1.5rem] md:text-[1rem] mt-5 md:mt-0 text-white md:text-inherit
+
+  }
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  .booking__form,.textarea {
+    width: 100%;
+  }
+
+  .booking__form input,
+  .textarea,
+  .booking__form select {
+    font-size: 0.8rem;
+  }
+}
 /*span.swiper-pagination-bullet {
   
   background-color: #f6f6f6;

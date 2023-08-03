@@ -5,13 +5,13 @@ const Hero = () => {
     return (
         <div className='relative'>
            <Slider/>
-           <div className='absolute right-[10%] top-[30%] lg:top-[20%] lg:right-5 z-[55]  text-white'>
-           <h1 className='text-[5rem] font-extrabold'> Car <span className='text-[#94053a]'> Hub</span> </h1>
-           <h3 className='text-[2.8rem]'>Rent & Shop any car<br/> of dreams here</h3>
+           <div className='absolute left-[10%] top-[25%] md:right-[10%] md:top-[30%] lg:top-[20%] lg:right-5 z-[55]  text-white'>
+           <h1 className=' text-[3rem] sm:text-[5rem] font-extrabold'> Car <span className='text-[#94053a]'> Hub</span> </h1>
+           <h3 className=' text-[2rem] sm:text-[2.8rem]'>Rent & Shop any car<br/> of dreams here</h3>
            <button className="btn">
         <svg width="180px" height="60px" viewBox="0 0 180 60" className="svg-border">
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
         </svg>
         <span>Reserve Now</span>
         </button>

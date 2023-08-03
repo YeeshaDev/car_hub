@@ -38,12 +38,14 @@ const UpcomingCars = () => {
         onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
+
+          
       >
         
             {
                 upcoming.map((item) => {
                  return (
-                        <SwiperSlide  id={item.id}>
+                        <SwiperSlide  key={item.id}>
                             <figure className='lg:h-[200px]'>
                             <img src={`./src/assets/${item.image}`} alt='' className="cover " />
                             </figure>

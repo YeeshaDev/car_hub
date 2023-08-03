@@ -35,7 +35,7 @@ const Testimonials = () => {
         
             {testimonies.map((item) => {
                 return (
-                    <SwiperSlide  id={item.id} className='py-8' >
+                    <SwiperSlide  key={item.id} className='py-8' >
                     <p className='w-[70%] block m-auto'>{item.text}</p>
                     <div className='flex flex-col gap-y-3 items-center justify-center mt-8'>
                     <figure className='w-[4rem] h-[4rem]'>

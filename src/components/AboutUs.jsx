@@ -52,7 +52,7 @@ All brand & type cars in our garage
 1.000+ picking locations around the world</p>
 <figure className='mt-5'>
  <img src='./src/assets/signature.png' alt='signature' className='w-[7rem]' />
- <caption className='text-[var(--primary)] whitespace-nowrap'>CAR HUB FOUNDER</caption>
+ <p className='text-[var(--primary)] whitespace-nowrap'>CAR HUB FOUNDER</p>
  </figure>
  
             </div>

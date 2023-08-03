@@ -39,11 +39,13 @@ const Blog = () => {
             },
             
         }}
+      
+     
         modules={[Autoplay]}
         className="text-left"
       >
       
-            {blog.map((data) => (
+            {blog.slice(0,4).map((data) => (
                 <SwiperSlide key={data.id} className='p-5'>
                     <figure className='h-[200px] lg:h-[250px] last:h-[100px] blog-img'>
                     <img src={data.image} alt='blog' className='object-contain h-full' />  

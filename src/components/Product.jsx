@@ -8,6 +8,7 @@ import { EffectFade,Autoplay, Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import ProductCards from './Features/ProductCards';
+import FilterCards from './Features/FilterCards';
 
 const Product =  () => {
     
@@ -34,7 +35,7 @@ if (isError) {
              <h2 className='text-[var(--primary)]'>FEATURED CARS</h2>
          <h1 className='text-[2.5rem] font-semibold'>Get Our Best Offers</h1>
          </div>
-         <ProductCards/>
+         <FilterCards/>
              </div>
          
          <div >
@@ -66,20 +67,15 @@ if (isError) {
         modules={[Autoplay,Pagination]}
         className="px-10 mt-3"
       >
-         {cars.map((item) => {
+         {cars.slice(0,5).map((item) => {
             const{name,id,image,price} = item;
             return (
                 <SwiperSlide key={id} className='mb-10 shadow-md rounded-md mt-4' >
                     
-                 <figure className='w-full h-[200px] lg:h-[250px]'>
-                    <img src={image} alt='cars' className='object-contain rounded-t-md ' />
-
-                 </figure>
-                 
-                 <div className='p-5 '>
-                    <h1 className='text-[1.3rem] font-bold my-5 whitespace-nowrap'>{name}</h1>
-                    <p>Start at  <span className='text-[var(--primary)] font-bold'>${price}</span> per day</p>
-                 </div>
+                 <ProductCards image={image}
+                 name={name}
+                 price= {price}
+                 />
                 </SwiperSlide>
                 
             )
