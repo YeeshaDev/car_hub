@@ -13,21 +13,21 @@ const AboutUs = () => {
              dummy text ever since the been when an unknown printer.</p>
             </div>
         <section className='grid grid-cols-1 lg:grid-cols-3 place-items-center gap-2 px-5'>
-            <div className='bg-[#f6f6f6] p-10 w-full h-[250px] flex flex-col items-center justify-center hover:relative hover:after:z-10 hover:bg-[url("./src/assets/car3.jpg")] hover:bg-cover hover:text-white hover:bg-center hover:after:content-[""] hover:after:absolute hover:after:bg-[rgba(0,0,0,0.3)] hover:after:w-full  hover:after:top-0 hover:after:bottom-0 hover:after:left-0 hover:after:right-0'>
+            <div className='bg-[#f6f6f6] p-10 w-full h-[250px] flex flex-col items-center justify-center hover:relative hover:after:z-10 hover:bg-[url("./assets/car3.jpg")] hover:bg-cover hover:text-white hover:bg-center hover:after:content-[""] hover:after:absolute hover:after:bg-[rgba(0,0,0,0.3)] hover:after:w-full  hover:after:top-0 hover:after:bottom-0 hover:after:left-0 hover:after:right-0'>
               <IoChatbubblesOutline className='text-[4rem] mb-5 text-[var(--primary)] hover:relative ' />
               <div>
                 <h3 className='opacity-1 hover:opacity-1 hover:relative'>24/7 Customer Online Support</h3>
                 <p>Call us Anywhere Anytime</p>
                 </div>  
             </div>
-            <div className='bg-[#f6f6f6]  h-[250px] p-10 w-full flex flex-col items-center justify-center hover:relative hover:after:z-10 hover:bg-[url("./src/assets/car4.jpg")] hover:bg-cover hover:text-white hover:bg-center hover:after:content-[""] hover:after:absolute hover:after:bg-[rgba(0,0,0,0.3)] hover:after:w-full  hover:after:top-0 hover:after:bottom-0 hover:after:left-0 hover:after:right-0'>
+            <div className='bg-[#f6f6f6]  h-[250px] p-10 w-full flex flex-col items-center justify-center hover:relative hover:after:z-10 hover:bg-[url("./assets/car4.jpg")] hover:bg-cover hover:text-white hover:bg-center hover:after:content-[""] hover:after:absolute hover:after:bg-[rgba(0,0,0,0.3)] hover:after:w-full  hover:after:top-0 hover:after:bottom-0 hover:after:left-0 hover:after:right-0'>
               <IoCalendar className='text-[4rem] mb-5 text-[var(--primary)]'/>
               <div>
                 <h3>Reservation Anytime You Want</h3>
                 <p>24/7 Customer Online Support</p>
                 </div>  
             </div>
-            <div className='bg-[#f6f6f6] h-[250px] p-10 w-full flex flex-col items-center justify-center hover:relative hover:after:z-10 hover:bg-[url("./src/assets/car5.jpg")] hover:bg-cover hover:text-white hover:bg-center hover:after:content-[""] hover:after:absolute hover:after:bg-[rgba(0,0,0,0.3)] hover:after:w-full  hover:after:top-0 hover:after:bottom-0 hover:after:left-0 hover:after:right-0'>
+            <div className='bg-[#f6f6f6] h-[250px] p-10 w-full flex flex-col items-center justify-center hover:relative hover:after:z-10 hover:bg-[url("./assets/car5.jpg")] hover:bg-cover hover:text-white hover:bg-center hover:after:content-[""] hover:after:absolute hover:after:bg-[rgba(0,0,0,0.3)] hover:after:w-full  hover:after:top-0 hover:after:bottom-0 hover:after:left-0 hover:after:right-0'>
               <IoLocationOutline className='text-[4rem] mb-5 text-[var(--primary)]' />
               <div>
                 <h3>Lots Of Pickin Locaton</h3>
@@ -39,7 +39,7 @@ const AboutUs = () => {
             </div>
         </section>
         </div>
-        <section className='bg-[url("./src/assets/aboutBg.jpg")] bg-bottom  bg-no-repeat mt-[-2rem]  pt-[7%]'>
+        <section className='bg-[url("./assets/aboutBg.jpg")] bg-bottom  bg-no-repeat mt-[-2rem]  pt-[7%]'>
         <div className='flex flex-col lg:flex-row items-center justify-center lg:justify-between px-5 py-[3rem] lg:gap-5 relative' >
         <div className='absolute text-[10rem] top-[10rem] left-[3rem] translate-x-[-50%] translate-y-[-50%] text-gray-400 opacity-20'>A</div> 
         <div className='my-20'>
@@ -51,7 +51,7 @@ const AboutUs = () => {
 All brand & type cars in our garage
 1.000+ picking locations around the world</p>
 <figure className='mt-5'>
- <img src='./src/assets/signature.png' alt='signature' className='w-[7rem]' />
+ <img src='./assets/signature.png' alt='signature' className='w-[7rem]' />
  <p className='text-[var(--primary)] whitespace-nowrap'>CAR HUB FOUNDER</p>
  </figure>
  
@@ -66,7 +66,7 @@ All brand & type cars in our garage
             transition:{duration:0.4, delay:0.5}
           }}
           >
-            <img src='./src/assets/aboutCar.png' alt='about red car'
+            <img src='./assets/aboutCar.png' alt='about red car'
             className='object-cover '
             />
           </motion.div>

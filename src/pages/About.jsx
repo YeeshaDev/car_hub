@@ -17,7 +17,7 @@ const About = () => {
         }}
         > 
             <PagesHero
-            image='./src/assets/aboutusBg.jpg'
+            image='./assets/aboutusBg.jpg'
             text='About us'
             page='About us'
             />
@@ -42,7 +42,7 @@ const About = () => {
             transition:{duration:0.4, delay:0.5}
           }}
           >
-            <img src='./src/assets/aboutCar.png' alt='about red car'
+            <img src='./assets/aboutCar.png' alt='about red car'
             className='object-cover '
             />
           </motion.div>
@@ -59,7 +59,7 @@ All brand & type cars in our garage
    <p className='flex items-center gap-2 mt-2'><span className='text-[var(--primary)]'> <FaPhone/></span> +23478685848</p>
      </div>
      <div>
-        <img src='./src/assets/car2.jpg' alt=''
+        <img src='./assets/car2.jpg' alt=''
 />     </div>
         </section>
         <section className='mt-[2rem] lg:py-[3rem]'>

@@ -53,7 +53,7 @@ const UpcomingCars = () => {
                  return (
                         <SwiperSlide  key={item.id}>
                             <figure className='lg:h-[200px]'>
-                            <img src={`./src/assets/${item.image}`} alt='' className="cover " />
+                            <img src={`./assets/${item.image}`} alt='' className="cover " />
                             </figure>
                             <div className='p-3 before:bg-white relative w-full h-full overflow-hidden z-0 before:content-[""] before:absolute before:bg-[url("./src/assets/upcomingBg.jpg")] before:bg-cover before:bg-center before:top-0 before:bottom-0 before:right-0 before:left-0 before:opacity-[0.1]' >
                                 <h4 className='relative z-[99] opacity-1'>{item.date}</h4>

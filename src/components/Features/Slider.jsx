@@ -18,15 +18,15 @@ export default function Slider() {
     const images =[
         {
             id:1,
-            img:'./src/assets/car1.jpg',
+            img:'./assets/car1.jpg',
         },
         {
             id:2,
-            img:'./src/assets/car2.jpg',
+            img:'./assets/car2.jpg',
         },
         {
             id:3,
-            img:'./src/assets/car3.jpg',
+            img:'./assets/car3.jpg',
         },
         
     ]
@@ -73,7 +73,3 @@ export default function Slider() {
     </>
   );
     }
-/* <img src='./src/assets/car1.jpg' />
-        </SwiperSlide>
-        <SwiperSlide><img src='./src/assets/car2.jpg' /></SwiperSlide>
-        <SwiperSlide><img src='./src/assets/car3.jpg' /> */

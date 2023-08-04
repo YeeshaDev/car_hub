@@ -1,6 +1,6 @@
 import React from 'react';
-import Paypal from '../../src/assets/paypal.jpg';
-import MasterCard from '../../src/assets/master-card.jpg'
+//import Paypal from './assets/paypal.jpg';
+//import MasterCard from './assets/master-card.jpg'
 
 const PaymentMethod = () => {
     return (
@@ -22,7 +22,7 @@ const PaymentMethod = () => {
           <input type="radio" /> Master Card
         </label>
 
-        <img src={MasterCard} alt="" />
+        <img src='./assets/master-card.jpg' alt="" />
       </div>
 
       <div className="payment mt-3 flex items-center justify-between">
@@ -30,7 +30,7 @@ const PaymentMethod = () => {
           <input type="radio" /> Paypal
         </label>
 
-        <img src={Paypal} alt="" />
+        <img src='./assets/paypal.jpg' alt="" />
       </div>
       <div className="payment text-end mt-5">
         <button>Reserve Now</button>

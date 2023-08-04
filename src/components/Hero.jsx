@@ -1,6 +1,8 @@
 import React from 'react'
 import Slider from './Features/Slider'
 
+
+
 const Hero = () => {
     
     return (

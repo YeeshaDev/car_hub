@@ -3,9 +3,9 @@ import { team } from '../constants/dealersData';
 
 const Dealers = () => {
     return (
-        <div className='pt-[7rem] pb-10 relative bg-[url("./src/assets/carBg.jpg")] bg-cover bg-[100%]  bg-no-repeat h-full'>
+        <div className='pt-[7rem] pb-10 relative bg-[url("./assets/carBg.jpg")] bg-cover bg-[100%]  bg-no-repeat h-full'>
             <div >
-                <img src='./src/assets/caradvert.jpg' className='absolute left-[50%] top-[3rem] transform translate-x-[-50%] translate-y-[-50%] z-[99]'/>
+                <img src='./assets/caradvert.jpg' className='absolute left-[50%] top-[3rem] transform translate-x-[-50%] translate-y-[-50%] z-[99]'/>
                 </div> 
          <div className='absolute top-0 bottom-0 w-full h-full bg-[rgba(0,0,0,0.3)] z-[-2]'></div> 
          <div className=' absolute text-[10rem] top-[15rem] left-[50%] translate-x-[-50%] translate-y-[-50%] text-gray-400 opacity-20 z-10'>S</div>
