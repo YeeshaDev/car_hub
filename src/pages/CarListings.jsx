@@ -44,8 +44,8 @@ const CarListings = () => {
              {cars.map((item) => (
                 <div key={item.id} className='flex flex-col  items-center gap-4 justify-centermb-10 shadow-md rounded-md mt-4'>
                     <Link to={`/cars/${item.name}`}>
-                    <figure className='w-full '>
-                    <img src={item.image} className='object-cover'/>
+                    <figure className='h-[200px] lg:h-[250px] w-full '>
+                    <img src={item.image} className='object-cover h-full'/>
                     </figure>
                    
                    <div className='p-5 '>

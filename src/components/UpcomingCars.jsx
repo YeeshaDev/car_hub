@@ -38,12 +38,11 @@ const UpcomingCars = () => {
         onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
           }}
-
           breakpoints={{
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 40,
-              },
+            768 : {
+                slidesPerView:3,
+                spaceBetween:0
+            }
           }}
 
           

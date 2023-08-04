@@ -33,9 +33,19 @@ const About = () => {
         <li className='flex items-center gap-2 mt-3'><span className='text-[var(--deepblue)]'><FaCheckCircle/></span>Lorem Ipsum is simply dummy</li>
          </ul>
      </div>
-     <div>
-        <img src='./src/assets/aboutCar.png' alt=''
-/>     </div>
+     <motion.div 
+          className='lg:w-[150%]'
+          initial={{opacity: 0, x:100}}
+          whileInView={{
+            opacity:1,
+            x:0,
+            transition:{duration:0.4, delay:0.5}
+          }}
+          >
+            <img src='./src/assets/aboutCar.png' alt='about red car'
+            className='object-cover '
+            />
+          </motion.div>
         </section>
         <section className='flex flex-col items-center justify-center lg:justify-between lg:flex-row-reverse gap-10 my-[3rem] pb-10  px-5'>
             <div  className='lg:max-w-[50%]'>

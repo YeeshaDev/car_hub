@@ -27,12 +27,8 @@ const Blog = () => {
           }}
           breakpoints={{
            
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 20,
-            },
             960: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               spaceBetween: 40,
             },
             
@@ -46,7 +42,7 @@ const Blog = () => {
             {blog.slice(0,4).map((data) => (
                 <SwiperSlide key={data.id} className='p-5'>
                   <Link to={`/blog/${data.title}`}>
-                    <figure className='h-[200px] lg:h-[250px] last:h-[100px] blog-img'>
+                    <figure className='h-[300px] last:h-[100px] blog-img'>
                     <img src={data.image} alt='blog' className='object-contain h-full' />  
                     </figure>
                   

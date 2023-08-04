@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className='relative'>
            <Slider/>
-           <div className='absolute left-[50%] xxsm:left-[60%] top-[35%] translate-x-[-50%] translate-y-[-50%] lg:top-[45%] lg:left-[70%] z-[55] lg  text-white'>
+           <div className='absolute left-[50%] xxsm:left-[60%] top-[35%] translate-x-[-50%] translate-y-[-50%] lg:top-[45%] lg:left-[75%] z-[55] lg  text-white'>
            <h1 className=' text-[3rem] sm:text-[5rem] font-extrabold whitespace-nowrap'> Car <span className='text-[#94053a]'> Hub</span> </h1>
            <h3 className=' text-[2rem] md:text-[2.8rem] w-[300px] md:w-[450px]'>Rent & Shop any car of dreams here</h3>
            <button className="btn w-[180px]">

@@ -21,9 +21,9 @@ const Blog = () => {
             text='Blog'
             page='Blog'
             />
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center justify-center  gap-5 px-3 mt-5'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center justify-center  gap-4 px-3 mt-5'>
            {blog.map((item) => (
-            <div key={item.id} className='w-full mt-5'>
+            <div key={item.id} className='w-full'>
                 <Link to={`/blog/${item.title}`}>
              <figure className='  lg:h-[250px] last:h-[100px]'>
                     <img src={item.image} alt='blog' className='w-full object-contain h-full' />  

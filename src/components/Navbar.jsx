@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaSearch, FaCar, FaBars, FaTimes } from 'react-icons/fa';
+import { FaSearch, FaCar, FaBars, FaTimes, FaEquals } from 'react-icons/fa';
 import SearchModal from './Features/SearchModal';
 import { Link, NavLink, useLocation, useNavigation } from 'react-router-dom';
 import {motion,AnimatePresence} from 'framer-motion'
@@ -81,10 +81,10 @@ console.log(pathname)
           <motion.ul
 
           className=' nav-item hidden md:flex items-center justify-between gap-5'>
-           <li className={(pathname == '/') ? 'text-[var(--primary)]' : 'text-black hover:text-[var(--primary)]'}><Link  to='/'>Home </Link></li>
+           <li className={(pathname == '/') ? 'text-[var(--primary)] hover:text-[var(--primary)]' : 'text-black hover:text-[var(--primary)]'}><Link  to='/'>Home </Link></li>
             <li className={pathname =='/about' ? 'text-[var(--primary)]' : 'text-black hover:text-[var(--primary)]'}><Link to='/about'>About Us</Link></li>
             <li className={pathname == '/cars' ? 'text-[var(--primary)]' : 'text-black hover:text-[var(--primary)]'}><Link to='/cars'>Cars</Link></li>
-            <li className={pathname == '/blog' ? 'text-[var(--primary)]' : 'text-black'}><Link to='/blog'>Blog</Link></li>
+            <li className={pathname == '/blog' ? 'text-[var(--primary)]' : 'text-black hover:text-[var(--primary)]'}><Link to='/blog '>Blog</Link></li>
             <li className='cursor-pointer' onClick={toggleSearchModal}>
               <FaSearch />
             </li>
@@ -175,7 +175,7 @@ console.log(pathname)
           <div 
           
           className="md:hidden cursor-pointer" onClick={toggleMobileMenu}>
-            {!isMobileMenuOpen ? <FaBars className='absolute top-5 right-5'/> : <FaTimes className='absolute top-5 z-40 right-10 text-[1.5rem] text-white' />}
+            {!isMobileMenuOpen ? <FaEquals className={`absolute top-5 right-5 text-[1.5rem] text-[var(--deepblue)] ${isScrolled ? 'text-white' : 'text-inherent'}`}/> : <FaTimes className='absolute top-5 z-40 right-10 text-[1.5rem] text-white' />}
           </div>
           </AnimatePresence>
           
