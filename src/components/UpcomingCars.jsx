@@ -14,7 +14,7 @@ const UpcomingCars = () => {
     const swiper = useSwiper();
     const swiperRef = React.useRef();
     return (
-        <div className='relative w-full h-full overflow-hidden z-0 before:content-[""] before:absolute before:bg-[url("./src/assets/upcomingBg.jpg")] before:bg-cover before:bg-center before:top-0 before:bottom-0 before:right-0 before:left-0 before:opacity-[0.3]' style={{
+        <div className='relative w-full h-full overflow-hidden z-0 before:content-[""] before:absolute before:bg-[url("./src/assets/upcomingBg.jpg")] before:bg-cover before:bg-center before:top-0 before:bottom-0 before:right-0 before:left-0 before:opacity-[0.3] mt-10 lg:mt-0' style={{
             
           
        }}>
@@ -30,13 +30,20 @@ const UpcomingCars = () => {
                      <div className='lg:max-w-[80%]'>
                      <Swiper
         spaceBetween={0}
-        slidesPerView={3}
+        slidesPerView={2}
         loop={true}
         centeredSlides={false}
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
         onBeforeInit={(swiper) => {
             swiperRef.current = swiper;
+          }}
+
+          breakpoints={{
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
           }}
 
           

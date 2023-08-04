@@ -26,7 +26,6 @@ body {
 
 .btn {
   position: relative;
-  width: 180px;
   height: 60px;
   cursor: pointer;
   background: #94053a;
@@ -147,13 +146,13 @@ body {
 
 .payment label {
   font-weight: 600;
-  color: #000d6b;
+  color: var(--deepblue);
 }
 
 .payment button {
   padding: 8px 15px;
   border-radius: 5px;
-  background: #000d6b;
+  background: var(--primary);
   color: #fff;
   border: none;
   outline: none;

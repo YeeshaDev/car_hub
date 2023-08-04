@@ -11,7 +11,7 @@ const Dealers = () => {
          <div className=' absolute text-[10rem] top-[15rem] left-[50%] translate-x-[-50%] translate-y-[-50%] text-gray-400 opacity-20 z-10'>S</div>
              <div className='pt-[3rem] flex flex-col items-center my-10 z-10'>
              <h2 className='text-[var(--primary)]'>OUR PROFESSIONAL STAFF</h2>
-         <h1 className='text-[2.5rem] font-semibold text-white '>Cars Dealer Drives</h1>
+         <h1 className=' text-[2rem] lg:text-[2.5rem] font-semibold text-white text-center '>Cars Dealer Drives</h1>
          </div>
          <article className=' px-5 mb-10 flex flex-col items-center justify-center lg:flex-row gap-4 z-10'>
             {team.map((data)=>(
@@ -26,12 +26,12 @@ const Dealers = () => {
                 </div>
             ))}
          </article>
-         <button className='btn mt-16 mb-10 mx-auto block w-full'>
+         <button className='btn mt-16 mb-10 mx-auto block w-[180px]'>
          <svg width="180px" height="60px" viewBox="0 0 180 60" className="svg-border">
           <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
           <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
         </svg>
-            <span className='w-full'>View All</span></button>
+            <span className='w-[180px]'>View All</span></button>
 
         </div>
     )

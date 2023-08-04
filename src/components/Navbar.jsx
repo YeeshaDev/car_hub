@@ -94,7 +94,7 @@ console.log(pathname)
            {/*-----------------------------------------
            -------------MOBILE NAVIGATION----------- */}
 
-          <AnimatePresence>
+          <AnimatePresence key={pathname}>
           
           {isMobileMenuOpen && <motion.ul
            variants={item}

@@ -1,6 +1,6 @@
 import React from 'react';
 import {IoCalendar,IoChatbubblesOutline,IoLocationOutline, IoMegaphoneOutline} from 'react-icons/io5'
-
+import { motion } from 'framer-motion';
 const AboutUs = () => {
     return (
       <main >
@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className='absolute text-[10rem] top-10 left-[50%] translate-x-[-50%] translate-y-[-50%] text-gray-400 opacity-20'>W</div>
             <div className='flex flex-col items-center my-20'>
             <p className='text-[var(--primary)]'>Welcome To Our Website</p>
-        <h2 className='text-[2.5rem] font-semibold '>CAR DEALERSHIP</h2>
+        <h2 className='text-[2rem] lg:text-[2.5rem] font-semibold '>CAR DEALERSHIP</h2>
         <p className='mt-8 lg:w-[70%] text-center'>Lorem Ipsum is simply dummy text of the printing and typesetting industry has been the industry's standard
              dummy text ever since the been when an unknown printer.</p>
             </div>
@@ -44,7 +44,7 @@ const AboutUs = () => {
         <div className='absolute text-[10rem] top-[10rem] left-[3rem] translate-x-[-50%] translate-y-[-50%] text-gray-400 opacity-20'>A</div> 
         <div className='my-20'>
             <p className='text-[var(--primary)]'>Know More About Us</p>
-        <h2 className='text-[2.5rem] font-semibold '>WHAT WE DO</h2>
+        <h2 className='text-[2rem] lg:text-[2.5rem] font-semibold '>WHAT WE DO</h2>
         <p className='mt-8 '>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
          <p>We working since 1980 with 4.000 customers
@@ -57,11 +57,19 @@ All brand & type cars in our garage
  
             </div>
           
-          <div className='lg:w-[150%]'>
+          <motion.div 
+          className='lg:w-[150%]'
+          initial={{opacity: 0, x:100}}
+          whileInView={{
+            opacity:1,
+            x:0,
+            transition:{duration:0.4, delay:0.5}
+          }}
+          >
             <img src='./src/assets/aboutCar.png' alt='about red car'
             className='object-cover '
             />
-          </div>
+          </motion.div>
         </div>
         </section>
 

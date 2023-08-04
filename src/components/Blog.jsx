@@ -6,6 +6,7 @@ import {IoArrowForwardCircleOutline} from 'react-icons/io5'
 import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
+import { Link } from 'react-router-dom';
 import { Autoplay,Navigation } from "swiper";
 
 const Blog = () => {
@@ -14,7 +15,7 @@ const Blog = () => {
           <div className='absolute text-[10rem] top-[2rem] left-[50%] translate-x-[-50%] translate-y-[-50%] text-gray-400 opacity-20'>B</div>
              <div className='flex flex-col items-center mt-20 mb-10'>
              <h2 className='text-[var(--primary)]'>ARTICLE FROM BLOG</h2>
-         <h1 className='text-[2.5rem] font-semibold'>Our Latest News</h1>
+         <h1 className='text-[2rem] lg:text-[2.5rem] font-semibold'>Our Latest News</h1>
 
          </div> 
          <Swiper
@@ -30,7 +31,7 @@ const Blog = () => {
               slidesPerView: 2,
               spaceBetween: 20,
             },
-            768: {
+            960: {
               slidesPerView: 3,
               spaceBetween: 40,
             },
@@ -44,6 +45,7 @@ const Blog = () => {
       
             {blog.slice(0,4).map((data) => (
                 <SwiperSlide key={data.id} className='p-5'>
+                  <Link to={`/blog/${data.title}`}>
                     <figure className='h-[200px] lg:h-[250px] last:h-[100px] blog-img'>
                     <img src={data.image} alt='blog' className='object-contain h-full' />  
                     </figure>
@@ -55,6 +57,7 @@ const Blog = () => {
                     <button className='flex items-center gap-1 ml-2 mt-2 text-[var(--primary)] font-[600] cursor-pointer'>Read more <IoArrowForwardCircleOutline/></button>
                     
                   </div>
+                  </Link>
                 </SwiperSlide>
             ))}
             </Swiper>  

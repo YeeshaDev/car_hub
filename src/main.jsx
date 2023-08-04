@@ -11,6 +11,7 @@ import CarListings from './pages/CarListings.jsx';
 import CarDetails from './pages/CarDetails.jsx';
 import Blog from './pages/Blog.jsx';
 import BlogDetails from './pages/BlogDetails.jsx';
+import Search from './pages/Search.jsx';
 
 const queryClient = new QueryClient();
 const router = createBrowserRouter([
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path:'/blog/:slug',
         element:<BlogDetails/>
+      },
+      {
+        path:'/search',
+        element:<Search/>
       }
 
     ]

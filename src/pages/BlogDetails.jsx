@@ -16,7 +16,7 @@ let fallback = blogPost.image
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [blog]);
+  }, [blogPost]);
 
   return (
     <motion.div
@@ -27,7 +27,7 @@ let fallback = blogPost.image
            
             opacity:0,
         }}
-        className='flex flex-col justify-center lg:flex-row px-5 gap-3 max-w-[100%]'
+        className='flex flex-col justify-center lg:flex-row px-2 sm:px-5 gap-3 max-w-[100%]'
         >  
       <div className='lg:max-w-[70%]'>
     <div className='mt-[4rem]'>
@@ -51,7 +51,7 @@ let fallback = blogPost.image
       </div>
     </div>
       {/* =============== comment form ============ */}
-      <div className='px-4'>
+      <div className=' px-2 sm:px-4'>
         <h2 className='text-[1.5rem]  font-bold my-5 text-[var(--primary)]'>3 Comments</h2>
         <div className='flex gap-3 mt-5'>
         <figure className='w-[5rem]'>
@@ -74,7 +74,7 @@ let fallback = blogPost.image
                   {/* =============== comment form ============ */}
                   <div className='flex flex-col '>
                     <h2 className='font-bold captalize mt-4 text-[1.2rem] text-[var(--primary)]'>Leave your comment</h2>
-                    <form className='flex flex-col gap-3 w-[70%] mt-5'>
+                    <form className='flex flex-col gap-3 lg:w-[70%] mt-5'>
                     <input type="text" placeholder="Full name" className='py-2 px-3' />
                       <input type="email" placeholder="Email" className='py-2 px-3' />
                       <textarea rows="5"
@@ -88,9 +88,9 @@ let fallback = blogPost.image
                   </div>
       </div>
        </div>
-      <div className='mt-[4rem]'>
-      <div className="recent__post mb-4">
-                <h5 className="text-[1.5rem] font-bold my-5 text-[var(--primary)]">Recent Posts</h5>
+      <div className=' mt-[2rem] lg:mt-[4rem]'>
+      <div className=" mb-4">
+                <h5 className="text-[1.5rem] font-bold my-1 lg:my-5 text-[var(--primary)]">Recent Posts</h5>
               </div>
               {blog.map((item) => (
                 

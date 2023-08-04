@@ -2,13 +2,14 @@ import React from 'react'
 import Slider from './Features/Slider'
 
 const Hero = () => {
+    
     return (
         <div className='relative'>
            <Slider/>
-           <div className='absolute right-[10%] top-[15%]  md:right-[10%] md:top-[30%] lg:top-[20%] lg:right-5 z-[55]  text-white'>
-           <h1 className=' text-[3rem] sm:text-[5rem] font-extrabold'> Car <span className='text-[#94053a]'> Hub</span> </h1>
-           <h3 className=' text-[2rem] sm:text-[2.8rem]'>Rent & Shop any car<br/> of dreams here</h3>
-           <button className="btn">
+           <div className='absolute left-[50%] xxsm:left-[60%] top-[35%] translate-x-[-50%] translate-y-[-50%] lg:top-[45%] lg:left-[70%] z-[55] lg  text-white'>
+           <h1 className=' text-[3rem] sm:text-[5rem] font-extrabold whitespace-nowrap'> Car <span className='text-[#94053a]'> Hub</span> </h1>
+           <h3 className=' text-[2rem] md:text-[2.8rem] w-[300px] md:w-[450px]'>Rent & Shop any car of dreams here</h3>
+           <button className="btn w-[180px]">
         <svg width="180px" height="60px" viewBox="0 0 180 60" className="svg-border">
           <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
           <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
@@ -24,9 +25,9 @@ const Hero = () => {
            {/* Select Form Starts Here */}
 
            <div className='lg:absolute bottom-0 w-full h-[200px] z-[55]  '>
-            <form className='px-3 lg:px-1 my-4 lg:my-[3%] grid grid-cols-2 lg:grid-cols-4 gap-x-2 lg:gap-9 '>
+            <form className='px-3  my-4 lg:my-[3%] grid grid-cols-2 lg:grid-cols-4 gap-x-2 lg:gap-9 '>
                 <div className='flex flex-col'>
-                <label htmlFor='cars' className='text-white my-2'>CAR BRANDS</label>
+                <label htmlFor='cars' className='font-semibold my-2 lg:text-white'>CAR BRANDS</label>
                 <select className='border rounded-md border-[var(--primary)] py-3 px-5 lg:w-[300px] h-[60px] text-black'>
                     
                     <option value='brand 1'>brand 1</option>
@@ -36,7 +37,7 @@ const Hero = () => {
                 </select>
                 </div>
                 <div className='flex flex-col'>
-                <label htmlFor='cars' className='text-white my-2'>CAR BRANDS</label>
+                <label htmlFor='cars' className='font-semibold my-2 lg:text-white'>CAR BRANDS</label>
                 <select className=' border rounded-md border-[var(--primary)] py-3 px-5 lg:w-[300px] h-[60px] text-black'>
                     
                     <option value='brand 1'>brand 1</option>
@@ -46,7 +47,7 @@ const Hero = () => {
                 </select>
                 </div>
                 <div className='flex flex-col'>
-                <label htmlFor='cars' className='text-white my-2'>CAR BRANDS</label>
+                <label htmlFor='cars' className='font-semibold my-2 lg:text-white'>CAR BRANDS</label>
                 <select className=' border rounded-md border-[var(--primary)] py-3 px-5 lg:w-[300px] h-[60px] text-black'>
                     
                     <option value='brand 1'>brand 1</option>
@@ -56,8 +57,14 @@ const Hero = () => {
                 </select>
                 </div>
                 <div className='flex flex-col '>
-                    <label className=' my-2 '>y</label>
-                <button className='lg:w-[300px] h-[60px] bg-[#94053a] text-white'>Search Now</button>
+                    <label className=' my-2 text-white lg:text-[rgba(0,0,0,0.1)]'>y</label>
+                    <button className="btn !mt-[0] lg:!w-[300px] py-3">
+        <svg  height="60px" viewBox="0 0 180 60" className="svg-border">
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="bg-line" />
+          <polyline points="179,1 179,59 1,59 1,1 179,1" className="hl-line" />
+        </svg>
+        <span>All cars </span>
+        </button>
                 </div>
                 
             </form>

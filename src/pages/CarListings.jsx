@@ -1,23 +1,20 @@
 import React from 'react'
 import PagesHero from '../components/Features/PagesHero';
-import { fetchCars } from '../utils/supabase';
-import {useQuery} from 'react-query';
 import {Link} from 'react-router-dom'
 import { motion } from 'framer-motion';
+import useCarData from '../utils/useCars';
 import {HiOutlineSortAscending} from 'react-icons/hi'
-import ProductCards from '../components/Features/ProductCards';
+
 const CarListings = () => {
 
-    const { data: cars, isLoading, isError } = useQuery('cars', fetchCars, {
-        refetchInterval: 300000
-    });
-                
+    const { cars, isLoading, isError } = useCarData();
+
     if (isLoading) {
-      return <div>Loading...</div>;
+        return <div>Loading...</div>;
     }
-    
+
     if (isError) {
-      return <div>Error retrieving data</div>;
+        return <div>Error retrieving data</div>;
     }
     return (
         <motion.section 
