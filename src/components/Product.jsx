@@ -40,7 +40,7 @@ if (isError) {
          
          <div >
          <Swiper
-        slidesPerView={4}
+        slidesPerView={1}
         spaceBetween={30}
         pagination={{
           clickable: true,
@@ -50,10 +50,7 @@ if (isError) {
             disableOnInteraction: false,
           }}
           breakpoints={{
-            500: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
+           
             640: {
               slidesPerView: 2,
               spaceBetween: 20,

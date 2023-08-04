@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { blog } from '../constants/BlogData';
 import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import { RiReplyLine } from 'react-icons/ri';
-
+import { motion } from 'framer-motion';
 const BlogDetails = () => {
   const { slug } = useParams();
   const blogPost = blog.find((item) => item.title === slug);

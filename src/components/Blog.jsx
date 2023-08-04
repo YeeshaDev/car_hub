@@ -18,17 +18,14 @@ const Blog = () => {
 
          </div> 
          <Swiper
-        slidesPerView={3}
+        slidesPerView={1}
         spaceBetween={30}
         autoplay={{
             delay: 4500,
             disableOnInteraction: false,
           }}
           breakpoints={{
-            500: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
+           
             640: {
               slidesPerView: 2,
               spaceBetween: 20,
