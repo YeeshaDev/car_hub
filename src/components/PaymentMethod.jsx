@@ -30,7 +30,7 @@ const PaymentMethod = () => {
           <input type="radio" /> Master Card
         </label>
 
-        <img src='./assets/master-card.jpg' alt="" />
+        <img src='../assets/master-card.jpg' alt="" />
       </div>
 
       <div className="payment mt-3 flex items-center justify-between">
@@ -38,7 +38,7 @@ const PaymentMethod = () => {
           <input type="radio" /> Paypal
         </label>
 
-        <img src='./assets/paypal.jpg' alt="" />
+        <img src='../assets/paypal.jpg' alt="" />
       </div>
       <div className="payment text-end mt-5">
         <button onClick={paymentAlert}>Reserve Now</button>
