@@ -39,7 +39,7 @@ const [email,setEmail] = useState('')
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
-                     className='p-3 border-[0.3px] solid border-[var(--primary)] text-black'
+                     className='p-3 border-[0.3px] solid border-[var(--primary)] text-black xsm:w-[70%] sm:w-[90%]'
                     placeholder='Enter Your Email' />
                     <span className='text-white p-[1.1rem] bg-[var(--primary)] ml-[-10px]' onClick={sweetAlert}><FaEnvelope /></span>
                    </form>

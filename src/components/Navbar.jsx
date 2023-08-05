@@ -63,13 +63,14 @@ console.log(pathname)
       initial="closed"
         className={
           isScrolled
-            ? 'flex justify-between py-5 px-7 bg-[#191f23] shadow-lg text-white '
+            ? 'flex justify-between py-7 px-7 bg-[#191f23] shadow-lg text-white -mt-2'
             : 'flex justify-between py-5 px-7 bg-white '
         }
       >
         <Link to='/'>
-          <div className="flex items-center gap-[0.2rem]">
-            <h1 className='font-bold font-["Fraunces"]'>Carhub</h1>
+          <div className= "flex items-center gap-[0.2rem]" >
+            <h1 className={
+          isScrolled ?'font-bold font-["Fraunces"]' : 'font-bold font-["Fraunces"]'}>Carhub</h1>
             <FaCar className="text-[#94053a] text-[1.2rem]" />
           </div>
         </Link>
@@ -102,7 +103,7 @@ console.log(pathname)
            animate={{height:"100vh", opacity:1}} 
            transition={{duration:.5}}
            exit="exit"
-          className='nav-item absolute top-0 w-full flex flex-col gap-y-5 md:hidden items-center justify-center md:justify-between left-0  p-5 bg-[var(--primary)]  md:static md:bg-inherit md:text-inherit md:p-0' >
+          className='nav-item absolute top-0 w-full h-screen flex flex-col gap-y-5 md:hidden items-center justify-center md:justify-between left-0  p-5 bg-[var(--primary)]  md:static md:bg-inherit md:text-inherit md:p-0' >
             
             <motion.li
             initial={{y:80,opacity:0}}
@@ -175,7 +176,7 @@ console.log(pathname)
           <div 
           
           className="md:hidden cursor-pointer" onClick={toggleMobileMenu}>
-            {!isMobileMenuOpen ? <FaEquals className={`absolute top-5 right-5 text-[1.5rem] text-[var(--deepblue)] ${isScrolled ? 'text-white' : 'text-inherent'}`}/> : <FaTimes className='absolute top-5 z-40 right-10 text-[1.5rem] text-white' />}
+            {!isMobileMenuOpen ? <FaEquals className={`absolute top-5 right-5 text-[1.5rem] text-[var(--deepblue)] ${isScrolled ? 'text-white ' : 'text-inherent'}`}/> : <FaTimes className='absolute top-5 z-40 right-10 text-[1.5rem] text-white' />}
           </div>
           </AnimatePresence>
           
