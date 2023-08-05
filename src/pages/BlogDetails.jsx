@@ -1,7 +1,6 @@
 import React,{useEffect} from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { blog } from '../constants/BlogData';
-import { Container, Row, Col, Form, FormGroup, Input } from "reactstrap";
 import { RiReplyLine } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 const BlogDetails = () => {
@@ -55,7 +54,7 @@ let fallback = blogPost.image
         <h2 className='text-[1.5rem]  font-bold my-5 text-[var(--primary)]'>3 Comments</h2>
         <div className='flex gap-3 mt-5'>
         <figure className='w-[5rem]'>
-          <img src='../../src/assets/avatar1.png'/>
+          <img src='../assets/avatar1.png'/>
         </figure>
         <div className="">
                     <h6 className=" fw-bold">David Visa</h6>

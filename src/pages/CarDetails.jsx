@@ -6,6 +6,7 @@ import { HiStar } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 import {RiRoadsterFill, RiSettings3Fill,RiMapPinFill,
     RiTimerFlashLine,RiWheelchairFill,RiBuildingLine} from 'react-icons/ri'
+import Swal from 'sweetalert2';
 import Bookings from '../components/Bookings';
 import PaymentMethod from '../components/PaymentMethod';
 const CarDetails = () => {
@@ -25,7 +26,7 @@ const CarDetails = () => {
     }
 
     const carInfo = cars.find((item) => item.name === name)
-
+ 
     useEffect(() => {
         window.scrollTo(0, 0);
       }, [carInfo]);

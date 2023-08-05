@@ -26,7 +26,7 @@ const CarListings = () => {
             opacity:0,
         }} >
            <PagesHero
-           image='./src/assets/aboutusBg.jpg'
+           image='./assets/aboutusBg.jpg'
            text='Car Listings'
            page='Cars'
            /> 

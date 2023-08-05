@@ -17,7 +17,7 @@ const Blog = () => {
         }}
          >
             <PagesHero
-            image='./src/assets/aboutusBg.jpg'
+            image='./assets/aboutusBg.jpg'
             text='Blog'
             page='Blog'
             />

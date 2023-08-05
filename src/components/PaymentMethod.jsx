@@ -1,8 +1,16 @@
 import React from 'react';
+import Swal from 'sweetalert2';
 //import Paypal from './assets/paypal.jpg';
 //import MasterCard from './assets/master-card.jpg'
 
 const PaymentMethod = () => {
+  const paymentAlert = () => {
+    Swal.fire({
+      title:"Good Job!",
+      text:"Reservation Made Successfully",
+      icon:"success"
+    })
+  }
     return (
         <>
       <div className="payment">
@@ -33,7 +41,7 @@ const PaymentMethod = () => {
         <img src='./assets/paypal.jpg' alt="" />
       </div>
       <div className="payment text-end mt-5">
-        <button>Reserve Now</button>
+        <button onClick={paymentAlert}>Reserve Now</button>
       </div>
     </>
     )
