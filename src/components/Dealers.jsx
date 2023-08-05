@@ -3,7 +3,7 @@ import { team } from '../constants/dealersData';
 
 const Dealers = () => {
     return (
-        <div className='pt-[7rem] pb-10 relative bg-[url("./assets/carBg.jpg")] bg-cover bg-[100%]  bg-no-repeat h-full'>
+        <div className='pt-[7rem] pb-10 relative bg-[url("../assets/carBg.jpg")] bg-cover bg-[100%]  bg-no-repeat h-full'>
             <div >
                 <img src='./assets/caradvert.jpg' className='absolute left-[50%] top-[3rem] transform translate-x-[-50%] translate-y-[-50%] z-[99]'/>
                 </div> 
