@@ -14,7 +14,7 @@ const UpcomingCars = () => {
     const swiper = useSwiper();
     const swiperRef = React.useRef();
     return (
-        <div className='relative w-full h-full overflow-hidden z-0 before:content-[""] before:absolute before:bg-[url("./assets/upcomingBg.jpg")] before:bg-cover before:bg-center before:top-0 before:bottom-0 before:right-0 before:left-0 before:opacity-[0.3] mt-10 lg:mt-0' style={{
+        <div className='relative w-full h-full overflow-hidden z-0 before:content-[""] before:absolute before:bg-[url("../assets/upcomingBg.jpg")] before:bg-cover before:bg-center before:top-0 before:bottom-0 before:right-0 before:left-0 before:opacity-[0.3] mt-10 lg:mt-0' style={{
             
           
        }}>
@@ -55,7 +55,7 @@ const UpcomingCars = () => {
                             <figure className='lg:h-[200px]'>
                             <img src={`./assets/${item.image}`} alt='' className="cover " />
                             </figure>
-                            <div className='p-3 before:bg-white relative w-full h-full overflow-hidden z-0 before:content-[""] before:absolute before:bg-[url("./assets/upcomingBg.jpg")] before:bg-cover before:bg-center before:top-0 before:bottom-0 before:right-0 before:left-0 before:opacity-[0.1]' >
+                            <div className='p-3 before:bg-white relative w-full h-full overflow-hidden z-0 before:content-[""] before:absolute before:bg-[url("../assets/upcomingBg.jpg")] before:bg-cover before:bg-center before:top-0 before:bottom-0 before:right-0 before:left-0 before:opacity-[0.1]' >
                                 <h4 className='relative z-[99] opacity-1'>{item.date}</h4>
                                 <p className='relative z-[99] opacity-1'>{item.name}</p>
                             </div>
