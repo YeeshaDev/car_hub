@@ -1,8 +1,8 @@
 import {createClient} from '@supabase/supabase-js'
 import axios from 'axios';
 
-const supabaseUrl = 'https://hiluplpwdqlhvpdkvefm.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhpbHVwbHB3ZHFsaHZwZGt2ZWZtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY4ODgwNjY3MywiZXhwIjoyMDA0MzgyNjczfQ.GwUXy6g1_SI_s8IYmJPATDoN5zocx9yjFG5NCh6UBZI';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
 
 export const fetchCars = async () => {
 const supabase = createClient(supabaseUrl, supabaseKey);
